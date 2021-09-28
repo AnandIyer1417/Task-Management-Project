@@ -1,0 +1,47 @@
+MODALS
+    Modal should be created before Navbar, they do not take up space on the page.
+
+    By default modal appears centre screen
+
+    Use bootstrap classes to create modal header, body and footer
+    Refer documentation on site for implementing on page.
+
+insertAdjacentHTML
+Is a method that accepts 4 parameters and then inserts content as per specified parameter
+    Parameters:
+        beforeBegin
+        afterBegin
+        beforeEnd
+        afterEnd
+    
+    Syntax:
+    taskContent.insertAdjacentHTML('beforeend', generateTaskCard(newTaskDetails));
+
+
+Example of Card:
+
+<div class="col-md-6 col-lg-4 mt-3">
+            <div class="card">
+              <div class="card-header">
+                <div class="d-flex justify-content-end">
+                  <button type="button" class="btn btn-outline-info">
+                    <i class="fas fa-pencil-alt"></i>
+                  </button>
+                  <button type="button" class="btn btn-outline-danger">
+                    <i class="far fa-trash-alt"></i>
+                  </button>
+                </div>
+                <img src="./images/day.jpeg" class="card-img-top" alt="image" />
+                <div class="card-body">
+                  <h5 class="card-title">Task Title</h5>
+                  <p class="card-text">Task Description</p>
+                  <span class="badge bg-primary">Task Type</span>
+                </div>
+                <div class="card-footer">
+                  <button class="btn btn-outline-primary float-end">
+                    Open Task
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
